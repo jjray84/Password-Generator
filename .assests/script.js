@@ -63,7 +63,7 @@ function generatePassword() {
     } else {
       password = password.concat(pikachu[random]);
     }
-}
+  }
   return password;
 }
 
