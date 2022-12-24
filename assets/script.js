@@ -24,6 +24,11 @@ function generatePassword() {
   
 
     numberOfCharacters = window.prompt("Select the number of characters for your password.");
+
+    if (isNaN(numberOfCharacters)){
+      window.alert("Please enter a numerical value.");
+      return;
+    }
   
     if (numberOfCharacters < 8 || numberOfCharacters > 128) {
       window.alert("Passwords must contain between 8 and 128 characters. Please try again.");
