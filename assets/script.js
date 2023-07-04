@@ -21,32 +21,32 @@ function generatePassword() {
     if (isNaN(numberOfCharacters)){
       window.alert("Please enter a numerical value.");
       return;
-    };
+    }
   
     if (numberOfCharacters < 8 || numberOfCharacters > 128) {
       window.alert("Passwords must contain between 8 and 128 characters. Please try again.");
          return;
-    };
+    }
     
     var userNumbers = window.confirm("Would you like numbers in your password?");
     if (userNumbers == true) {
       pikachu = pikachu.concat(numbers);
-    }; 
+    }
   
     var userSymbols = window.confirm("Would you like to use symbols in your password?");
     if (userSymbols == true) {
       pikachu = pikachu.concat(symbols);
-    };
+    }
   
     var userLowercase = window.confirm("Would you like to use lowercase letters in your password?");
     if (userLowercase == true) {
       pikachu = pikachu.concat(lowercase);
-    };
+    }
   
     var userUppercase = window.confirm("Would you like to use uppercase letter in your password?");
     if (userUppercase == true) {
       pikachu = pikachu.concat(uppercase);
-    };
+    }
   
     console.log(pikachu);
   };
